@@ -1,7 +1,7 @@
 ﻿
 namespace Aufgabenliste
 {
-    partial class AufgabenverwaltungMain
+    partial class Aufgabenverwaltung
     {
         /// <summary>
         /// Required designer variable.
@@ -39,7 +39,6 @@ namespace Aufgabenliste
             this.listBoxAufgaben.Name = "listBoxAufgaben";
             this.listBoxAufgaben.Size = new System.Drawing.Size(474, 355);
             this.listBoxAufgaben.TabIndex = 0;
-            this.listBoxAufgaben.SelectedIndexChanged += new System.EventHandler(this.listBoxAufgaben_SelectedIndexChanged);
             // 
             // AufgabenverwaltungMain
             // 
