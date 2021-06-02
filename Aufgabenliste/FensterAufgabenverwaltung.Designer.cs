@@ -1,7 +1,7 @@
 ﻿
 namespace Aufgabenliste
 {
-    partial class Aufgabenverwaltung
+    partial class FensterAufgabenverwaltung
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,7 @@ namespace Aufgabenliste
         private void InitializeComponent()
         {
             this.listBoxAufgaben = new System.Windows.Forms.ListBox();
+            this.button1NeueAufgabe = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBoxAufgaben
@@ -40,13 +41,24 @@ namespace Aufgabenliste
             this.listBoxAufgaben.Size = new System.Drawing.Size(474, 355);
             this.listBoxAufgaben.TabIndex = 0;
             // 
-            // AufgabenverwaltungMain
+            // button1NeueAufgabe
+            // 
+            this.button1NeueAufgabe.Location = new System.Drawing.Point(572, 79);
+            this.button1NeueAufgabe.Name = "button1NeueAufgabe";
+            this.button1NeueAufgabe.Size = new System.Drawing.Size(117, 53);
+            this.button1NeueAufgabe.TabIndex = 1;
+            this.button1NeueAufgabe.Text = "Neue Aufgabe hinzufügen";
+            this.button1NeueAufgabe.UseVisualStyleBackColor = true;
+            this.button1NeueAufgabe.Click += new System.EventHandler(this.button1NeueAufgabe_Click);
+            // 
+            // Aufgabenverwaltung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1NeueAufgabe);
             this.Controls.Add(this.listBoxAufgaben);
-            this.Name = "AufgabenverwaltungMain";
+            this.Name = "Aufgabenverwaltung";
             this.Text = "Aufgabenverwaltung";
             this.ResumeLayout(false);
 
@@ -55,6 +67,7 @@ namespace Aufgabenliste
         #endregion
 
         private System.Windows.Forms.ListBox listBoxAufgaben;
+        private System.Windows.Forms.Button button1NeueAufgabe;
     }
 }
 
