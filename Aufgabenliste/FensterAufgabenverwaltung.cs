@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Aufgabenliste
 {
-    public partial class Aufgabenverwaltung : Form
+    public partial class FensterAufgabenverwaltung : Form
     {
 
         private List<Aufgabe> aufgaben = new List<Aufgabe>();
@@ -23,7 +23,7 @@ namespace Aufgabenliste
 
 
 
-        public Aufgabenverwaltung()
+        public FensterAufgabenverwaltung()
         {
             InitializeComponent();
             // Testdaten
@@ -32,6 +32,14 @@ namespace Aufgabenliste
             AddAufgabe(new Aufgabe("Fenster putzen", DateTime.Now, "ich", 0));
             AddAufgabe(new Aufgabe("Bewerbung schreiben", DateTime.Now, "ich", 20));
             AddAufgabe(new Aufgabe("Wäsche waschen", DateTime.Now, "jemand anders", 50));
+        }
+
+        private void button1NeueAufgabe_Click(object sender, EventArgs e)
+        {
+            //Form-Objekt erstellen
+            FensterAufgabeHinzufuegen f = new FensterAufgabeHinzufuegen();
+            //2. Fenster öffnen, 1. Fenster blockieren
+            f.ShowDialog();
         }
     }
 }

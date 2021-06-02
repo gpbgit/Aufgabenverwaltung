@@ -16,7 +16,7 @@ namespace Aufgabenliste
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Aufgabenverwaltung());
+            Application.Run(new FensterAufgabenverwaltung());
         }
     }
 }
