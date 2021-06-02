@@ -3,6 +3,14 @@ Aufgabenverwaltungs-Software
 
 IL Aufgabe aus dem Mouton-C#-Kurs
 
+Programmieren Sie eine WindowsForms Anwendung, mit der der Nutzer eine Liste von Aufgaben verwalten kann.
+Jede Aufgabe besteht aus folgenden Informationen:
+
+    Bezeichnung
+    Abgabedatum
+    Mitarbeiter
+    Erledigungsgrad (in %)
+    
 <p dir="ltr" style="text-align: left;">
     <div>Aufgaben:<br></div>
     <div>
